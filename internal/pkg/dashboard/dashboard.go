@@ -35,6 +35,17 @@ import (
 func init() {
 	// set background to be left as the default color of the terminal
 	tview.Styles.PrimitiveBackgroundColor = tcell.ColorDefault
+	tview.Styles.PrimitiveBackgroundColor = tcell.ColorDefault
+	tview.Styles.ContrastBackgroundColor = tcell.ColorDefault
+	tview.Styles.MoreContrastBackgroundColor = tcell.ColorDefault
+	tview.Styles.BorderColor = tcell.ColorDefault
+	tview.Styles.TitleColor = tcell.ColorDefault
+	tview.Styles.GraphicsColor = tcell.ColorDefault
+	tview.Styles.PrimaryTextColor = tcell.ColorDefault
+	tview.Styles.SecondaryTextColor = tcell.ColorDefault
+	tview.Styles.TertiaryTextColor = tcell.ColorDefault
+	tview.Styles.InverseTextColor = tcell.ColorDefault
+	tview.Styles.ContrastSecondaryTextColor = tcell.ColorDefault
 
 	// set the titles of the termui (legacy) to be bold
 	termui.Theme.Block.Title.Modifier = termui.ModifierBold

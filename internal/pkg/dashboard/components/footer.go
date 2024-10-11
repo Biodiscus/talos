@@ -53,7 +53,7 @@ func NewFooter(screenKeyToName map[string]string, nodes []string) *Footer {
 					j,
 					tview.BoxDrawingsLightHorizontal,
 					nil,
-					tcell.StyleDefault.Foreground(tcell.ColorWhite),
+					tcell.StyleDefault.Foreground(tcell.ColorDefault),
 				)
 			}
 		}

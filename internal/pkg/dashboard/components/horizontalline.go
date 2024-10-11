@@ -32,9 +32,9 @@ func NewHorizontalLine(label string) *HorizontalLine {
 		for i := x; i < x+width; i++ {
 			for j := y; j < y+height; j++ {
 				if j == y && i >= leftGap && i-leftGap < labelLength {
-					screen.SetContent(i, j, widget.label[i-leftGap], nil, tcell.StyleDefault.Foreground(tcell.ColorYellow))
+					screen.SetContent(i, j, widget.label[i-leftGap], nil, tcell.StyleDefault.Foreground(tcell.ColorDefault))
 				} else {
-					screen.SetContent(i, j, tview.BoxDrawingsLightHorizontal, nil, tcell.StyleDefault.Foreground(tcell.ColorWhite))
+					screen.SetContent(i, j, tview.BoxDrawingsLightHorizontal, nil, tcell.StyleDefault.Foreground(tcell.ColorDefault))
 				}
 			}
 		}
